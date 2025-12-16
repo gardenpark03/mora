@@ -1,0 +1,106 @@
+// Prisma Schema for Mora Workspace System
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 사용자 모델 (Supabase Auth와 연동)
+model User {
+  id          String       @id // Supabase Auth UUID
+  email       String       @unique
+  name        String?
+  avatarUrl   String?
+  plan        String       @default("free") // free, pro, business
+  
+  // Stripe 정보
+  stripeCustomerId      String? @unique
+  stripeSubscriptionId  String? @unique
+  
+  memberships Membership[]
+  meetings    Meeting[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+// 워크스페이스 모델
+model Workspace {
+  id          String       @id @default(cuid())
+  name        String
+  description String?
+  slug        String       @unique
+  members     Membership[]
+  projects    Project[]
+  invites     Invite[]
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+// 멤버십 (사용자-워크스페이스 연결)
+model Membership {
+  id          String    @id @default(cuid())
+  role        Role      @default(MEMBER)
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  workspaceId String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, workspaceId])
+}
+
+// 역할 열거형
+enum Role {
+  ADMIN
+  MEMBER
+  VIEWER
+}
+
+// 프로젝트 모델
+model Project {
+  id          String    @id @default(cuid())
+  name        String
+  description String?
+  color       String?   @default("#4F46E5")
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  workspaceId String
+  meetings    Meeting[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// 미팅 모델
+model Meeting {
+  id          String    @id @default(cuid())
+  title       String
+  transcript  String?   @db.Text
+  summary     Json?
+  status      String    @default("draft") // draft, active, completed
+  language    String    @default("ko") // 전사 언어
+  project     Project?  @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  projectId   String?
+  owner       User?     @relation(fields: [ownerId], references: [id], onDelete: SetNull)
+  ownerId     String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// 초대 모델
+model Invite {
+  id          String    @id @default(cuid())
+  email       String
+  token       String    @unique
+  role        Role      @default(MEMBER)
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  workspaceId String
+  expiresAt   DateTime
+  usedAt      DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@unique([workspaceId, email])
+}

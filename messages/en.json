@@ -1,0 +1,179 @@
+{
+  "common": {
+    "appName": "Mora",
+    "tagline": "Your meeting memory — visualized",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "workspaces": "Workspaces",
+    "meetings": "Meetings",
+    "settings": "Settings",
+    "signOut": "Sign Out",
+    "signIn": "Sign In",
+    "pricing": "Pricing"
+  },
+  "landing": {
+    "hero": {
+      "title": "Your meeting memory —",
+      "titleHighlight": "visualized",
+      "subtitle": "AI that listens, summarizes, and draws your meeting in real time. Never lose track of important discussions again.",
+      "ctaPrimary": "Get Started",
+      "ctaSecondary": "Watch Demo",
+      "badge": "AI-Powered Meeting Intelligence"
+    },
+    "features": {
+      "title": "Everything you need for productive meetings",
+      "subtitle": "Mora combines AI transcription, intelligent summarization, and visual note-taking in one seamless experience.",
+      "visualization": {
+        "title": "Real-time Visualization",
+        "description": "Watch your conversation transform into an interactive knowledge graph as you speak."
+      },
+      "actionItems": {
+        "title": "Action Items",
+        "description": "AI automatically extracts tasks, assigns owners, and tracks deadlines from your discussion."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Share meeting insights instantly with your team. Everyone stays on the same page."
+      }
+    },
+    "pricing": {
+      "title": "Simple, transparent pricing",
+      "subtitle": "Choose the plan that fits your team",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "savePercent": "Save 20%"
+    },
+    "cta": {
+      "title": "Ready to transform your meetings?",
+      "subtitle": "Join thousands of teams already using Mora",
+      "button": "Start Free Trial"
+    }
+  },
+  "workspace": {
+    "create": "Create Workspace",
+    "select": "Select Workspace",
+    "name": "Workspace Name",
+    "description": "Description",
+    "members": "Members",
+    "projects": "Projects",
+    "recentMeetings": "Recent Meetings",
+    "inviteTeam": "Invite Team",
+    "settings": "Workspace Settings"
+  },
+  "meeting": {
+    "title": "Meeting",
+    "startRecording": "Start Recording",
+    "stopRecording": "Stop Recording",
+    "demoMode": "Demo Mode",
+    "liveMode": "Live Mode",
+    "endMeeting": "End Meeting",
+    "transcript": "Transcript",
+    "summary": "Summary",
+    "actionItems": "Action Items",
+    "participants": "Participants",
+    "visualization": "Visualization"
+  },
+  "pricing": {
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "description": "Perfect for trying out Mora",
+      "features": [
+        "Up to 3 meetings per month",
+        "Basic AI transcription",
+        "Simple visualization",
+        "1 workspace",
+        "Community support"
+      ],
+      "cta": "Get Started"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$29",
+      "description": "For professionals and small teams",
+      "features": [
+        "Unlimited meetings",
+        "Advanced AI transcription",
+        "Full visualization suite",
+        "5 workspaces",
+        "Priority support",
+        "Export to PDF/Markdown",
+        "Custom branding"
+      ],
+      "cta": "Start Free Trial",
+      "popular": "Most Popular"
+    },
+    "business": {
+      "name": "Business",
+      "price": "$99",
+      "description": "For growing organizations",
+      "features": [
+        "Everything in Pro",
+        "Unlimited workspaces",
+        "Advanced analytics",
+        "SSO integration",
+        "Dedicated support",
+        "Custom AI models",
+        "API access",
+        "SLA guarantee"
+      ],
+      "cta": "Contact Sales"
+    }
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "continueWith": "Or continue with"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "billing": "Billing",
+    "language": "Language",
+    "notifications": "Notifications",
+    "appearance": "Appearance"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Manage your workspaces and meetings",
+    "recentMeetings": "Recent Meetings",
+    "recentMeetingsDesc": "Access your past and ongoing meetings",
+    "createMeeting": "Create Meeting",
+    "newMeeting": "Create New Meeting",
+    "newMeetingDesc": "Start a new meeting session with AI-powered transcription and visualization",
+    "meetingTitle": "Meeting Title",
+    "meetingTitlePlaceholder": "e.g., Q4 Planning Session",
+    "workspace": "Workspace",
+    "startMeeting": "Start Meeting",
+    "noMeetings": "No meetings yet",
+    "noMeetingsDesc": "Create your first meeting to get started"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Can I switch plans later?",
+    "a1": "Yes! You can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.",
+    "q2": "What happens after the free trial?",
+    "a2": "After your 14-day free trial, you'll be charged based on your selected plan. You can cancel anytime before the trial ends.",
+    "q3": "Do you offer refunds?",
+    "a3": "Yes, we offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund."
+  }
+}
+

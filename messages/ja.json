@@ -1,0 +1,179 @@
+{
+  "common": {
+    "appName": "Mora",
+    "tagline": "あなたの会議の記憶 — 視覚化",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "create": "作成",
+    "back": "戻る",
+    "next": "次へ",
+    "done": "完了"
+  },
+  "nav": {
+    "home": "ホーム",
+    "dashboard": "ダッシュボード",
+    "workspaces": "ワークスペース",
+    "meetings": "会議",
+    "settings": "設定",
+    "signOut": "サインアウト",
+    "signIn": "サインイン",
+    "pricing": "料金"
+  },
+  "landing": {
+    "hero": {
+      "title": "あなたの会議の記憶 —",
+      "titleHighlight": "視覚化",
+      "subtitle": "リアルタイムで聞き、要約し、会議を描くAI。重要な議論を二度と見逃しません。",
+      "ctaPrimary": "始める",
+      "ctaSecondary": "デモを見る",
+      "badge": "AI搭載会議インテリジェンス"
+    },
+    "features": {
+      "title": "生産的な会議に必要なすべて",
+      "subtitle": "MoraはAI文字起こし、インテリジェント要約、視覚的ノートテイキングを1つのシームレスな体験に統合します。",
+      "visualization": {
+        "title": "リアルタイム視覚化",
+        "description": "会話がインタラクティブな知識グラフに変換されるのをリアルタイムで見ることができます。"
+      },
+      "actionItems": {
+        "title": "アクションアイテム",
+        "description": "AIが自動的にタスクを抽出し、担当者を割り当て、議論から期限を追跡します。"
+      },
+      "collaboration": {
+        "title": "コラボレーション",
+        "description": "会議のインサイトをチームと即座に共有します。全員が同じページにいます。"
+      }
+    },
+    "pricing": {
+      "title": "シンプルで透明な価格",
+      "subtitle": "チームに合ったプランを選択してください",
+      "monthly": "月額",
+      "yearly": "年額",
+      "savePercent": "20%節約"
+    },
+    "cta": {
+      "title": "会議を変革する準備はできましたか？",
+      "subtitle": "すでにMoraを使用している何千ものチームに参加してください",
+      "button": "無料トライアルを開始"
+    }
+  },
+  "workspace": {
+    "create": "ワークスペースを作成",
+    "select": "ワークスペースを選択",
+    "name": "ワークスペース名",
+    "description": "説明",
+    "members": "メンバー",
+    "projects": "プロジェクト",
+    "recentMeetings": "最近の会議",
+    "inviteTeam": "チームを招待",
+    "settings": "ワークスペース設定"
+  },
+  "meeting": {
+    "title": "会議",
+    "startRecording": "録音開始",
+    "stopRecording": "録音停止",
+    "demoMode": "デモモード",
+    "liveMode": "ライブモード",
+    "endMeeting": "会議を終了",
+    "transcript": "文字起こし",
+    "summary": "要約",
+    "actionItems": "アクションアイテム",
+    "participants": "参加者",
+    "visualization": "視覚化"
+  },
+  "pricing": {
+    "free": {
+      "name": "無料",
+      "price": "¥0",
+      "description": "Moraを試すのに最適",
+      "features": [
+        "月最大3回の会議",
+        "基本的なAI文字起こし",
+        "シンプルな視覚化",
+        "1つのワークスペース",
+        "コミュニティサポート"
+      ],
+      "cta": "始める"
+    },
+    "pro": {
+      "name": "プロ",
+      "price": "¥3,900",
+      "description": "プロフェッショナルと小規模チーム向け",
+      "features": [
+        "無制限の会議",
+        "高度なAI文字起こし",
+        "完全な視覚化スイート",
+        "5つのワークスペース",
+        "優先サポート",
+        "PDF/Markdown エクスポート",
+        "カスタムブランディング"
+      ],
+      "cta": "無料トライアルを開始",
+      "popular": "最も人気"
+    },
+    "business": {
+      "name": "ビジネス",
+      "price": "¥13,000",
+      "description": "成長する組織向け",
+      "features": [
+        "プロのすべての機能",
+        "無制限のワークスペース",
+        "高度な分析",
+        "SSO統合",
+        "専任サポート",
+        "カスタムAIモデル",
+        "APIアクセス",
+        "SLA保証"
+      ],
+      "cta": "営業チームに連絡"
+    }
+  },
+  "auth": {
+    "signIn": "サインイン",
+    "signUp": "サインアップ",
+    "email": "メール",
+    "password": "パスワード",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "hasAccount": "すでにアカウントをお持ちですか？",
+    "continueWith": "または次で続ける"
+  },
+  "settings": {
+    "title": "設定",
+    "profile": "プロフィール",
+    "billing": "請求",
+    "language": "言語",
+    "notifications": "通知",
+    "appearance": "外観"
+  },
+  "dashboard": {
+    "title": "ダッシュボード",
+    "subtitle": "ワークスペースと会議を管理",
+    "recentMeetings": "最近の会議",
+    "recentMeetingsDesc": "過去および進行中の会議にアクセス",
+    "createMeeting": "会議を作成",
+    "newMeeting": "新しい会議を作成",
+    "newMeetingDesc": "AI搭載の文字起こしと視覚化で新しい会議セッションを開始",
+    "meetingTitle": "会議タイトル",
+    "meetingTitlePlaceholder": "例：Q4計画セッション",
+    "workspace": "ワークスペース",
+    "startMeeting": "会議を開始",
+    "noMeetings": "まだ会議がありません",
+    "noMeetingsDesc": "最初の会議を作成して開始してください"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "q1": "後でプランを変更できますか？",
+    "a1": "はい！いつでもプランをアップグレードまたはダウングレードできます。変更は次の請求サイクルの開始時に有効になります。",
+    "q2": "無料トライアル後はどうなりますか？",
+    "a2": "14日間の無料トライアル後、選択したプランに基づいて課金されます。トライアル期間が終了する前にいつでもキャンセルできます。",
+    "q3": "返金はありますか？",
+    "a3": "はい、30日間の返金保証を提供しています。ご満足いただけない場合は、全額返金のためにお問い合わせください。"
+  }
+}
+

@@ -1,0 +1,179 @@
+{
+  "common": {
+    "appName": "Mora",
+    "tagline": "Tu memoria de reuniones — visualizada",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "done": "Hecho"
+  },
+  "nav": {
+    "home": "Inicio",
+    "dashboard": "Panel",
+    "workspaces": "Espacios",
+    "meetings": "Reuniones",
+    "settings": "Ajustes",
+    "signOut": "Cerrar sesión",
+    "signIn": "Iniciar sesión",
+    "pricing": "Precios"
+  },
+  "landing": {
+    "hero": {
+      "title": "Tu memoria de reuniones —",
+      "titleHighlight": "visualizada",
+      "subtitle": "IA que escucha, resume y dibuja tu reunión en tiempo real. Nunca pierdas el rastro de discusiones importantes.",
+      "ctaPrimary": "Comenzar",
+      "ctaSecondary": "Ver Demo",
+      "badge": "Inteligencia de Reuniones con IA"
+    },
+    "features": {
+      "title": "Todo lo que necesitas para reuniones productivas",
+      "subtitle": "Mora combina transcripción de IA, resumen inteligente y toma de notas visual en una experiencia perfecta.",
+      "visualization": {
+        "title": "Visualización en Tiempo Real",
+        "description": "Observa cómo tu conversación se transforma en un gráfico de conocimiento interactivo mientras hablas."
+      },
+      "actionItems": {
+        "title": "Elementos de Acción",
+        "description": "La IA extrae automáticamente tareas, asigna responsables y rastrea plazos desde tu discusión."
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Comparte información de reuniones al instante con tu equipo. Todos están en la misma página."
+      }
+    },
+    "pricing": {
+      "title": "Precios simples y transparentes",
+      "subtitle": "Elige el plan que se adapte a tu equipo",
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "savePercent": "Ahorra 20%"
+    },
+    "cta": {
+      "title": "¿Listo para transformar tus reuniones?",
+      "subtitle": "Únete a miles de equipos que ya usan Mora",
+      "button": "Iniciar Prueba Gratuita"
+    }
+  },
+  "workspace": {
+    "create": "Crear Espacio",
+    "select": "Seleccionar Espacio",
+    "name": "Nombre del Espacio",
+    "description": "Descripción",
+    "members": "Miembros",
+    "projects": "Proyectos",
+    "recentMeetings": "Reuniones Recientes",
+    "inviteTeam": "Invitar Equipo",
+    "settings": "Ajustes del Espacio"
+  },
+  "meeting": {
+    "title": "Reunión",
+    "startRecording": "Iniciar Grabación",
+    "stopRecording": "Detener Grabación",
+    "demoMode": "Modo Demo",
+    "liveMode": "Modo en Vivo",
+    "endMeeting": "Finalizar Reunión",
+    "transcript": "Transcripción",
+    "summary": "Resumen",
+    "actionItems": "Elementos de Acción",
+    "participants": "Participantes",
+    "visualization": "Visualización"
+  },
+  "pricing": {
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "description": "Perfecto para probar Mora",
+      "features": [
+        "Hasta 3 reuniones por mes",
+        "Transcripción IA básica",
+        "Visualización simple",
+        "1 espacio de trabajo",
+        "Soporte comunitario"
+      ],
+      "cta": "Comenzar"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$29",
+      "description": "Para profesionales y equipos pequeños",
+      "features": [
+        "Reuniones ilimitadas",
+        "Transcripción IA avanzada",
+        "Suite completa de visualización",
+        "5 espacios de trabajo",
+        "Soporte prioritario",
+        "Exportar a PDF/Markdown",
+        "Marca personalizada"
+      ],
+      "cta": "Iniciar Prueba Gratuita",
+      "popular": "Más Popular"
+    },
+    "business": {
+      "name": "Negocio",
+      "price": "$99",
+      "description": "Para organizaciones en crecimiento",
+      "features": [
+        "Todo en Pro",
+        "Espacios ilimitados",
+        "Análisis avanzados",
+        "Integración SSO",
+        "Soporte dedicado",
+        "Modelos IA personalizados",
+        "Acceso API",
+        "Garantía SLA"
+      ],
+      "cta": "Contactar Ventas"
+    }
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signUp": "Registrarse",
+    "email": "Correo",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "continueWith": "O continuar con"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "profile": "Perfil",
+    "billing": "Facturación",
+    "language": "Idioma",
+    "notifications": "Notificaciones",
+    "appearance": "Apariencia"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "subtitle": "Gestiona tus espacios y reuniones",
+    "recentMeetings": "Reuniones Recientes",
+    "recentMeetingsDesc": "Accede a tus reuniones pasadas y en curso",
+    "createMeeting": "Crear Reunión",
+    "newMeeting": "Crear Nueva Reunión",
+    "newMeetingDesc": "Inicia una nueva sesión de reunión con transcripción y visualización con IA",
+    "meetingTitle": "Título de la Reunión",
+    "meetingTitlePlaceholder": "ej., Sesión de Planificación Q4",
+    "workspace": "Espacio",
+    "startMeeting": "Iniciar Reunión",
+    "noMeetings": "Aún no hay reuniones",
+    "noMeetingsDesc": "Crea tu primera reunión para comenzar"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "q1": "¿Puedo cambiar de plan más tarde?",
+    "a1": "¡Sí! Puedes actualizar o degradar tu plan en cualquier momento. Los cambios surten efecto al inicio de tu próximo ciclo de facturación.",
+    "q2": "¿Qué pasa después de la prueba gratuita?",
+    "a2": "Después de tu prueba gratuita de 14 días, se te cobrará según el plan seleccionado. Puedes cancelar en cualquier momento antes de que termine la prueba.",
+    "q3": "¿Ofrecen reembolsos?",
+    "a3": "Sí, ofrecemos una garantía de devolución de dinero de 30 días. Si no estás satisfecho, contáctanos para un reembolso completo."
+  }
+}
+

@@ -1,0 +1,179 @@
+{
+  "common": {
+    "appName": "Mora",
+    "tagline": "당신의 미팅 기억 — 시각화로",
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "create": "만들기",
+    "back": "뒤로",
+    "next": "다음",
+    "done": "완료"
+  },
+  "nav": {
+    "home": "홈",
+    "dashboard": "대시보드",
+    "workspaces": "워크스페이스",
+    "meetings": "미팅",
+    "settings": "설정",
+    "signOut": "로그아웃",
+    "signIn": "로그인",
+    "pricing": "요금제"
+  },
+  "landing": {
+    "hero": {
+      "title": "당신의 미팅 기억 —",
+      "titleHighlight": "시각화로",
+      "subtitle": "실시간으로 듣고, 요약하고, 미팅을 그려주는 AI. 중요한 논의를 다시는 놓치지 마세요.",
+      "ctaPrimary": "시작하기",
+      "ctaSecondary": "데모 보기",
+      "badge": "AI 기반 미팅 인텔리전스"
+    },
+    "features": {
+      "title": "생산적인 미팅을 위한 모든 것",
+      "subtitle": "Mora는 AI 전사, 지능형 요약, 시각적 노트 작성을 하나의 원활한 경험으로 결합합니다.",
+      "visualization": {
+        "title": "실시간 시각화",
+        "description": "대화가 대화형 지식 그래프로 변환되는 것을 실시간으로 확인하세요."
+      },
+      "actionItems": {
+        "title": "액션 아이템",
+        "description": "AI가 자동으로 작업을 추출하고, 담당자를 할당하며, 논의에서 마감일을 추적합니다."
+      },
+      "collaboration": {
+        "title": "협업",
+        "description": "미팅 인사이트를 팀과 즉시 공유하세요. 모두가 같은 페이지에 있습니다."
+      }
+    },
+    "pricing": {
+      "title": "간단하고 투명한 가격",
+      "subtitle": "팀에 맞는 플랜을 선택하세요",
+      "monthly": "월간",
+      "yearly": "연간",
+      "savePercent": "20% 절약"
+    },
+    "cta": {
+      "title": "미팅을 혁신할 준비가 되셨나요?",
+      "subtitle": "이미 Mora를 사용 중인 수천 개의 팀에 합류하세요",
+      "button": "무료 체험 시작"
+    }
+  },
+  "workspace": {
+    "create": "워크스페이스 만들기",
+    "select": "워크스페이스 선택",
+    "name": "워크스페이스 이름",
+    "description": "설명",
+    "members": "멤버",
+    "projects": "프로젝트",
+    "recentMeetings": "최근 미팅",
+    "inviteTeam": "팀 초대",
+    "settings": "워크스페이스 설정"
+  },
+  "meeting": {
+    "title": "미팅",
+    "startRecording": "녹음 시작",
+    "stopRecording": "녹음 중지",
+    "demoMode": "데모 모드",
+    "liveMode": "라이브 모드",
+    "endMeeting": "미팅 종료",
+    "transcript": "전사",
+    "summary": "요약",
+    "actionItems": "액션 아이템",
+    "participants": "참여자",
+    "visualization": "시각화"
+  },
+  "pricing": {
+    "free": {
+      "name": "무료",
+      "price": "₩0",
+      "description": "Mora를 시험해보기에 완벽",
+      "features": [
+        "월 최대 3회 미팅",
+        "기본 AI 전사",
+        "간단한 시각화",
+        "1개 워크스페이스",
+        "커뮤니티 지원"
+      ],
+      "cta": "시작하기"
+    },
+    "pro": {
+      "name": "프로",
+      "price": "₩32,000",
+      "description": "전문가와 소규모 팀을 위한",
+      "features": [
+        "무제한 미팅",
+        "고급 AI 전사",
+        "전체 시각화 제품군",
+        "5개 워크스페이스",
+        "우선 지원",
+        "PDF/Markdown 내보내기",
+        "사용자 정의 브랜딩"
+      ],
+      "cta": "무료 체험 시작",
+      "popular": "가장 인기"
+    },
+    "business": {
+      "name": "비즈니스",
+      "price": "₩110,000",
+      "description": "성장하는 조직을 위한",
+      "features": [
+        "프로의 모든 기능",
+        "무제한 워크스페이스",
+        "고급 분석",
+        "SSO 통합",
+        "전담 지원",
+        "사용자 정의 AI 모델",
+        "API 액세스",
+        "SLA 보장"
+      ],
+      "cta": "영업팀 문의"
+    }
+  },
+  "auth": {
+    "signIn": "로그인",
+    "signUp": "회원가입",
+    "email": "이메일",
+    "password": "비밀번호",
+    "forgotPassword": "비밀번호를 잊으셨나요?",
+    "noAccount": "계정이 없으신가요?",
+    "hasAccount": "이미 계정이 있으신가요?",
+    "continueWith": "또는 다음으로 계속"
+  },
+  "settings": {
+    "title": "설정",
+    "profile": "프로필",
+    "billing": "결제",
+    "language": "언어",
+    "notifications": "알림",
+    "appearance": "모양"
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "subtitle": "워크스페이스와 미팅을 관리하세요",
+    "recentMeetings": "최근 미팅",
+    "recentMeetingsDesc": "과거 및 진행 중인 미팅에 액세스하세요",
+    "createMeeting": "미팅 생성",
+    "newMeeting": "새 미팅 생성",
+    "newMeetingDesc": "AI 기반 전사 및 시각화로 새로운 미팅 세션을 시작하세요",
+    "meetingTitle": "미팅 제목",
+    "meetingTitlePlaceholder": "예: Q4 계획 세션",
+    "workspace": "워크스페이스",
+    "startMeeting": "미팅 시작",
+    "noMeetings": "아직 미팅이 없습니다",
+    "noMeetingsDesc": "첫 번째 미팅을 생성하여 시작하세요"
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "q1": "나중에 플랜을 변경할 수 있나요?",
+    "a1": "네! 언제든지 플랜을 업그레이드하거나 다운그레이드할 수 있습니다. 변경사항은 다음 결제 주기부터 적용됩니다.",
+    "q2": "무료 체험 후에는 어떻게 되나요?",
+    "a2": "14일 무료 체험 후, 선택한 플랜에 따라 요금이 청구됩니다. 체험 기간이 끝나기 전에 언제든지 취소할 수 있습니다.",
+    "q3": "환불을 제공하나요?",
+    "a3": "네, 30일 환불 보장을 제공합니다. 만족하지 않으시면 전액 환불을 위해 저희에게 연락해 주세요."
+  }
+}
+
