@@ -15,7 +15,8 @@ import {
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { supabase, signOut } from '@/lib/auth'
-import { User, Settings, LogOut, CreditCard } from 'lucide-react'
+import { User as UserIcon, Settings, LogOut, CreditCard } from 'lucide-react'
+import type { User } from '@supabase/supabase-js'
 
 export default function UserMenu() {
   const router = useRouter()
@@ -25,7 +26,7 @@ export default function UserMenu() {
   // Extract locale from pathname
   const locale = pathname.split('/')[1] || 'en'
   
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<User | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -99,7 +100,7 @@ export default function UserMenu() {
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
           <Link href={`/${locale}/dashboard`} className="cursor-pointer">
-            <User className="mr-2 h-4 w-4" />
+            <UserIcon className="mr-2 h-4 w-4" />
             <span>{t('nav.dashboard')}</span>
           </Link>
         </DropdownMenuItem>

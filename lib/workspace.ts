@@ -55,7 +55,7 @@ export async function getUserWorkspaces(userId: string) {
     },
   })
 
-  return memberships.map((m) => ({
+  return memberships.map((m: any) => ({
     ...m.workspace,
     role: m.role,
   }))

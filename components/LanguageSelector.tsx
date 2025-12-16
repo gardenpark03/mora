@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { locales, localeNames } from '@/i18n'
+import { locales, localeNames, Locale } from '@/i18n'
 
 export default function LanguageSelector() {
   const pathname = usePathname()
@@ -16,7 +16,7 @@ export default function LanguageSelector() {
   
   // Extract current locale from pathname
   const segments = pathname.split('/')
-  const currentLocale = segments[1] && locales.includes(segments[1] as any) ? segments[1] : 'en'
+  const currentLocale = segments[1] && locales.includes(segments[1] as Locale) ? segments[1] : 'en'
 
   const handleLocaleChange = (newLocale: string) => {
     // Remove current locale from pathname and add new one

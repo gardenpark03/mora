@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import type { User } from '@supabase/supabase-js'
 import prisma from './prisma'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://demo.supabase.co'
@@ -33,7 +34,7 @@ export async function getCurrentUser() {
  * Prisma User와 Supabase Auth 동기화
  * 회원가입/로그인 시 자동으로 Prisma User 생성/업데이트
  */
-export async function syncUserToPrisma(supabaseUser: any) {
+export async function syncUserToPrisma(supabaseUser: User) {
   try {
     const existingUser = await prisma.user.findUnique({
       where: { id: supabaseUser.id },

@@ -5,7 +5,7 @@ import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import "../globals.css"
 import Navbar from "@/components/Navbar"
-import { locales } from '@/i18n'
+import { locales, Locale } from '@/i18n'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -89,7 +89,7 @@ export default async function LocaleLayout({
   params: { locale: string }
 }) {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound()
+  if (!locales.includes(locale as Locale)) notFound()
 
   // Providing all messages to the client
   // side is the easiest way to get started

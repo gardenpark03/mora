@@ -20,7 +20,15 @@ interface VisualizationBoardProps {
 }
 
 // 커스텀 노드 컴포넌트
-function CustomNode({ data }: { data: any }) {
+interface NodeData {
+  speaker: string
+  label: string
+  timestamp: number
+  fullText?: string
+  color?: string
+}
+
+function CustomNode({ data }: { data: NodeData }) {
   return (
     <motion.div
       initial={{ scale: 0, opacity: 0 }}

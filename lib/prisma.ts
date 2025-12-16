@@ -1,14 +1,14 @@
 import { PrismaClient } from '@prisma/client'
 
 const globalForPrisma = globalThis as unknown as {
-  prisma: PrismaClient | undefined
+  prisma: PrismaClient | null | undefined
 }
 
 // DATABASE_URL이 없으면 null 반환 (데모 모드)
-const createPrismaClient = () => {
+const createPrismaClient = (): PrismaClient | null => {
   if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('[YOUR_PASSWORD]') || process.env.DATABASE_URL.includes('[PASSWORD]')) {
     console.warn('⚠️  DATABASE_URL이 설정되지 않았습니다. 데모 모드로 실행됩니다.')
-    return null as any
+    return null
   }
 
   return new PrismaClient({
@@ -16,7 +16,7 @@ const createPrismaClient = () => {
   })
 }
 
-export const prisma = globalForPrisma.prisma ?? createPrismaClient()
+export const prisma = globalForPrisma.prisma ?? createPrismaClient() as PrismaClient
 
 if (process.env.NODE_ENV !== 'production') {
   globalForPrisma.prisma = prisma
