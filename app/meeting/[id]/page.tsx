@@ -9,7 +9,7 @@ import ParticipantPanel from '@/components/ParticipantPanel'
 import ActionItemPanel from '@/components/ActionItemPanel'
 import RecordingIndicator from '@/components/RecordingIndicator'
 import { useMockMeetingFeed } from '@/hooks/useMockMeetingFeed'
-import { useAudioCapture } from '@/hooks/useAudioCapture'
+import { useAudioCapture, TranscriptionResult } from '@/hooks/useAudioCapture'
 import { useAIProcessor } from '@/hooks/useAIProcessor'
 import { Play, Pause, StopCircle, ArrowLeft, Mic, MicOff } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -48,7 +48,7 @@ export default function MeetingRoom() {
   })
 
   const audioCapture = useAudioCapture({
-    onTranscription: useCallback(async (result) => {
+    onTranscription: useCallback(async (result: TranscriptionResult) => {
       console.log('[Meeting] 전사 완료:', result.text)
       await aiProcessor.processTranscription(result.text, '나', result.timestamp)
     }, [aiProcessor]),
