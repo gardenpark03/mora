@@ -5,14 +5,15 @@ import { MeetingMessage, SummaryItem } from '@/lib/types'
 
 interface SummarizeResponse {
   success: boolean
-  topics: string[]
-  summary: string
-  actionItems: Array<{
+  topics?: string[]
+  summary?: string
+  actionItems?: Array<{
     task: string
     owner: string
     due: string
   }>
-  type: 'statement' | 'question' | 'decision' | 'action'
+  type?: 'statement' | 'question' | 'decision' | 'action'
+  error?: string
 }
 
 interface UseAIProcessorOptions {
@@ -85,9 +86,9 @@ export function useAIProcessor({
       const summary: SummaryItem = {
         id: `summary-${Date.now()}`,
         speaker: speaker || defaultSpeaker,
-        text: data.summary,
+        text: data.summary || text.trim(),
         timestamp: timestamp || Date.now(),
-        type: data.type,
+        type: data.type || 'statement',
       }
 
       // 요약 전달
@@ -103,8 +104,8 @@ export function useAIProcessor({
       return {
         message,
         summary,
-        topics: data.topics,
-        actionItems: data.actionItems,
+        topics: data.topics || [],
+        actionItems: data.actionItems || [],
       }
 
     } catch (err) {
