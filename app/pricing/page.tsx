@@ -214,7 +214,7 @@ export default function PricingPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  After your 14-day free trial, you'll be charged based on your selected plan. You can cancel anytime before the trial ends.
+                  After your 14-day free trial, you&apos;ll be charged based on your selected plan. You can cancel anytime before the trial ends.
                 </p>
               </CardContent>
             </Card>
@@ -227,7 +227,7 @@ export default function PricingPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes, we offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund.
+                  Yes, we offer a 30-day money-back guarantee. If you&apos;re not satisfied, contact us for a full refund.
                 </p>
               </CardContent>
             </Card>

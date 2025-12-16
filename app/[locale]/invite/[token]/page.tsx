@@ -17,6 +17,7 @@ export default function InvitePage() {
 
   useEffect(() => {
     acceptInvite()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token])
 
   const acceptInvite = async () => {

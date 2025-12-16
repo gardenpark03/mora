@@ -134,7 +134,7 @@ export default function LoginPage() {
                     <p className="font-medium mb-1">빠른 해결 방법:</p>
                     <p className="text-xs">
                       Supabase Dashboard → Authentication → Providers → Email →
-                      "Confirm email" 토글을 OFF로 변경하세요
+                      &quot;Confirm email&quot; 토글을 OFF로 변경하세요
                     </p>
                   </div>
                 </div>

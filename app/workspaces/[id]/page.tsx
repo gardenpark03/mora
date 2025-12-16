@@ -78,6 +78,7 @@ export default function WorkspacePage() {
 
   useEffect(() => {
     fetchWorkspace()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [workspaceId])
 
   const fetchWorkspace = async () => {
