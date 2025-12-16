@@ -1,13 +1,32 @@
 import Stripe from 'stripe'
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY is not defined')
+let stripeInstance: Stripe | null = null
+
+function initStripe(): Stripe {
+  const apiKey = process.env.STRIPE_SECRET_KEY
+  
+  if (!apiKey) {
+    console.warn('⚠️  STRIPE_SECRET_KEY is not defined. Stripe features will not work.')
+    // Return a dummy object during build time to prevent errors
+    return null as any
+  }
+  
+  if (!stripeInstance) {
+    stripeInstance = new Stripe(apiKey, {
+      apiVersion: '2023-10-16',
+      typescript: true,
+    })
+  }
+  
+  return stripeInstance
 }
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2023-10-16',
-  typescript: true,
-})
+export function getStripe(): Stripe {
+  if (!stripeInstance) {
+    stripeInstance = initStripe()
+  }
+  return stripeInstance
+}
 
 // 요금제 정의
 export const PLANS = {
@@ -69,6 +88,12 @@ export async function createCheckoutSession(
   successUrl: string,
   cancelUrl: string
 ) {
+  const stripe = getStripe()
+  
+  if (!stripe) {
+    throw new Error('Stripe is not configured')
+  }
+
   const session = await stripe.checkout.sessions.create({
     mode: 'subscription',
     payment_method_types: ['card'],
@@ -94,6 +119,12 @@ export async function createCustomerPortalSession(
   customerId: string,
   returnUrl: string
 ) {
+  const stripe = getStripe()
+  
+  if (!stripe) {
+    throw new Error('Stripe is not configured')
+  }
+
   const session = await stripe.billingPortal.sessions.create({
     customer: customerId,
     return_url: returnUrl,
@@ -104,12 +135,24 @@ export async function createCustomerPortalSession(
 
 // 구독 상태 확인
 export async function getSubscription(subscriptionId: string) {
+  const stripe = getStripe()
+  
+  if (!stripe) {
+    throw new Error('Stripe is not configured')
+  }
+
   const subscription = await stripe.subscriptions.retrieve(subscriptionId)
   return subscription
 }
 
 // 구독 취소
 export async function cancelSubscription(subscriptionId: string) {
+  const stripe = getStripe()
+  
+  if (!stripe) {
+    throw new Error('Stripe is not configured')
+  }
+
   const subscription = await stripe.subscriptions.cancel(subscriptionId)
   return subscription
 }
@@ -119,6 +162,12 @@ export function constructWebhookEvent(
   payload: string | Buffer,
   signature: string
 ) {
+  const stripe = getStripe()
+  
+  if (!stripe) {
+    throw new Error('Stripe is not configured')
+  }
+
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET
 
   if (!webhookSecret) {
@@ -127,4 +176,3 @@ export function constructWebhookEvent(
 
   return stripe.webhooks.constructEvent(payload, signature, webhookSecret)
 }
-
