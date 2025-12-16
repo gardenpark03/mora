@@ -36,6 +36,11 @@ export async function getCurrentUser() {
  */
 export async function syncUserToPrisma(supabaseUser: User) {
   try {
+    // Email은 필수
+    if (!supabaseUser.email) {
+      throw new Error('사용자 이메일이 없습니다.')
+    }
+
     const existingUser = await prisma.user.findUnique({
       where: { id: supabaseUser.id },
     })
